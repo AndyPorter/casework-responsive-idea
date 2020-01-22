@@ -1,0 +1,99 @@
+// ///////////////////////////////////////////////////////////////////////
+// needed for casework
+//
+// load this file last
+// ///////////////////////////////////////////////////////////////////////
+
+
+// over-ride gov layout /////////////////////////////////
+
+.govuk-width-container {
+	margin-left:15px;
+	margin-right:15px;
+//	width:1250px;
+	max-width:1680px;
+}
+
+// gov main content wrapper ////////////////////////////
+// https://design-system.service.gov.uk/styles/layout/#building-your-own-layout
+
+.govuk-main-wrapper--auto-spacing:first-child {
+	padding-top:0px;
+}
+
+.govuk-main-wrapper {
+	padding-top:15px;
+}
+
+// header //////////////////////////////////////////////
+
+.govuk-header__container {
+	border-bottom: 10px solid #87c426;
+}
+
+// non standard columns ////////////////////////////////
+
+.column-fixed-width-80 {
+	max-width:80ch;
+	width:80ch;
+}
+
+.column-available-width {
+	float:left;
+	width: calc(100% - 80ch);
+}
+
+
+.column-half-available-width {
+	float:left;
+	width: calc(50% - 80ch);
+}
+
+.courier-font {
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+
+
+
+// messing about with less space between columns ////////
+
+// less padding on columns
+/* .govuk-grid-column-one-half {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.govuk-grid-column-full {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+// compensate by adding padding back in row
+.govuk-grid-row {
+	padding-left:5px;
+	padding-right:5px;
+} */
+
+
+
+// register ////////////////////////////////////////
+
+.register * {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.sub-reg-intro {
+	text-transform: uppercase;
+}
+
+.proprietor-name {
+	text-transform: uppercase;
+}
+
+.proprietor-name::before, .proprietor-name::after  {
+	content:"%";
+}
+
+

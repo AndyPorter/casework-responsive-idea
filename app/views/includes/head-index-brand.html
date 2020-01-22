@@ -1,0 +1,27 @@
+ <meta property="og:title" content="Design Anthology for services, products, projects" />
+<meta property="og:description" content="Design information - what and why: overviews, protoypes, assets, decisions" />
+<meta property="og:image" content="/public/images/Github-social-preview-2-01.png" />
+
+<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+
+
+<link href="/public/stylesheets/unbranded.css" rel="stylesheet" type="text/css" />
+<link href="/public/stylesheets/shame.css" rel="stylesheet" type="text/css" />
+
+{% for stylesheetUrl in extensionConfig.stylesheets %}
+  <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+{% endfor %}
+
+
+
+
+{% block header %}
+<header class="govuk-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <span><a class="govuk-header__link govuk-header__link--service-name" href="/">Application processing</a></span>
+<!--     <div class="govuk-header-tag">
+      Services and products - information for designers
+    </div> -->
+  </div>
+</header>
+{% endblock %}
