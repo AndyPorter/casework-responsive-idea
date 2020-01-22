@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -10,34 +10,60 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+        Casework responsive design template - exploring ideas.
       </h1>{{releaseVersion | log }}
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        This is to explore, document, show, share, aid discussion of what the fundamental responsive framework is for a casework system.
       </p>
-
       <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      	We don't know yet exactly how this system will be - eg we are exploring ideas for 2 or 3 main columns, but we do know some things, and we should explore what that means/might be like.
       </p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      <h2 class="govuk-heading-m">What do we know about caseworkers kit</h2>
+      <p>
+      	What do we know, or can, or should assume - what constraints (enabling and restrictive) should we consider.
+        <ul class="govuk-list govuk-list--bullet">
+        	<li>the predominant kit is - a regular desk with a base station and 2 monitors</li>
+        	<li>desktop monitor default resolution in landscape orientation is 1680 x 1050</li>
+        	<li>most users have both monitors in landscape orientation</li>
+        	<li>some users have one monitor (the one for reading documents) in portrait resolution</li>
+        	<li>desktop monitor default resolution in portrait orientation is 1050 x 1680</li>
+        	<li>There is a display setting in Windows 10 - Custom scaling: Change the size of text, apps and other items - which is set to 175%, set by org policy - So this may affect size fo elements on screen?</li>
+        	<li>most caseworkers have the 'stock keyboard and mouse', but there are a variety of mice and to a lesser extend keyboard, plus caseworkers do have a range of other personal assistive physical kit</li>
+        	<li>Internet explorer, version ??, is the default browser</li>
+        	<li>Internet explorer is set by policy to default to 125% zoom level - dunno if many people have changed this</li>
+        	<li>Some - how many ??? - caseworkers have chrome browser??</li>
+        	<li>Some caseworkers have the 'casework tools' on the left monitor and the 'documents' on the right monitor (or some tools on one, and some other tools on the other).  Some caseworkers have it the opposite way around</li>
+        	<li>One monitor - some caseworkers, although we've not seen yet, may have only one monitor? Or might be in a situation with only one monitor? e.g. in a meeting? or when screen sharing, or when meeting the public in the public meeting rooms</li>
+        	<li>Some, although we've not seen yet, caseworkers may work on a laptop e.g. as a temporary situation like in a meeting. e.g. on-site going to an ad-hoc meeting, or in a space with no meeting kit.</li>
+        	<li>Non-caseworkers may need to show or demonstrate systems (in production or a test region) or prototypes with staff or senior management</li>
+        	<li>Laptops - there might be a standard display resolution for our standard kit, but there may be a variety of laptops</li>
+        	<li>tablets - we don't think there is a need/situation to do casework on a tablet.  However they may be used to demonstrate something rather than do casework on - possibly a casework management dashboard? However technology in actual use changes fast.</li>
+        	<li>phones - we don't think there is a need/situation for phones, but could they may be used to demonstrate something on, check in on - possibly a casework management dashboard?  So not core casework.</li>
+        </ul>
+      </p>
+      
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+      <h2 class="govuk-heading-m">Design Assumptions</h2>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
+	      <li>We should optimise for the most common kit/situations.  We probably don't need a mobile first design (but it shouldn't break), but we should ensure system is highly usable on single desktop displays, laptops, and tablets</li>
+
+	      <li><a href="page-template">Page template:</a> We need a page template, that meets the initial version of casework systems, but is able to be easily extended</li>
+
+	      <li><a href="accessibility">Accessibility:</a> We need to not overlook accessibility - build in the structure needed at this page to not exclude by oversight.  (page template includes block for skip links)</li>
+
+	      <li><a href="maximise-space">Maximise working space:</a> We need to be able to maximise the screen space available to do casework</li>
+
+	      <li>We need to demonstrate/document the resolution break points, gutter, margins, padding - etc - the rules of the layout</li>
+
+	      <li>We have to think about this structure - how it will work with the components and patterns inside it - but we should document/set/explore the style/layout first</li>
+
+	      <li><a href="other">Other considerations:</a> background colour</li>
+
+	      <li>copying govuk ideas, and other depts casework/internal system ideas - is the basis, so we reuse, and add to the pool of proven design inside gov.</li>
+	    </ul>
+
     </div>
 </div>
 

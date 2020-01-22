@@ -1,0 +1,147 @@
+
+{% extends "layout-index-brand.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+  	<h1 class="govuk-heading-l">
+			columns
+		</h1>
+	</div>
+</div>
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m">50% col 1</h2>
+
+		<p class="govuk-body">
+			<ul class="govuk-list govuk-list--bullet">
+				<li>15px l+r margins for the page container, columns resize to fit max of container</li>
+				<li>15px (much less) padding at top of content, below header</li>
+			</ul>
+		</p>
+
+	</div>
+
+	<div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m">50% col 2</h2>
+
+    <div class="govuk-form-group">
+		    <span id="changed-name-hint" class="govuk-hint">
+		      Is this variation relevant to the comparison?
+		    </span>
+		    <div class="govuk-radios govuk-radios--small govuk-radios govuk-radios--inline">
+		      <div class="govuk-radios__item">
+		        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+		        <label class="govuk-label govuk-radios__label" for="changed-name">
+		          Yes
+		        </label>
+		      </div>
+		      <div class="govuk-radios__item">
+		        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+		        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+		          No
+		        </label>
+		      </div>
+		    </div>
+
+		</div>
+	</div>
+
+</div>
+
+<div class="govuk-grid-row ">
+	<div class="govuk-grid-column-full">
+		<hr>
+	</div>
+</div>
+
+
+<!-- fixed width column -->
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-half column-fixed-width-80">
+    <h2 class="govuk-heading-m">fixed width column</h2>
+
+		<p class="govuk-body">
+			80 char width content - eg a register (80ch)<br>
+			will probably work with a fixed width font like courier (register)
+		</p>
+
+		<p class="govuk-body">
+			1234567890 234567890 334567890 444567890 555567890 666667890 777777890 8888888-80123456789
+		</p>
+
+		<p class="govuk-body courier-font">
+			1234567890 234567890 334567890 444567890 555567890 666667890 777777890 8888888-80
+		</p>
+
+	</div>
+
+	<div class="govuk-grid-column-one-half column-available-width">
+    <h2 class="govuk-heading-m">resize to fill available space</h2>
+
+    <p class="govuk-body">
+    	lots of copy that will wrap waffle, wallfe, wlaffe, weffla, wwawflel, awful, lawfll, wlfel, waffel, dfrfdg sd,fd fgdfg fwergh sfgf s sgwrr rg sfdgfd werfsfer zfsrrdr fs  err   zxfwerfregdf gsfaert dsr w e x f sr ggtqerasf.
+    </p>
+
+	</div>
+			
+</div>
+
+<div class="govuk-grid-row ">
+	<div class="govuk-grid-column-full">
+		<hr>
+	</div>
+</div>
+
+<div class="govuk-grid-row ">
+	<div class="govuk-grid-column-one-quarter">
+		<h2 class="govuk-heading-m">quarter</h2>
+	</div>
+	<div class="govuk-grid-column-one-half">
+		<h2 class="govuk-heading-m">half</h2>
+	</div>
+	<div class="govuk-grid-column-one-quarter">
+		<h2 class="govuk-heading-m">quarter</h2>
+	</div>
+</div>
+
+
+<div class="govuk-grid-row ">
+	<div class="govuk-grid-column-full">
+		<hr>
+	</div>
+</div>
+
+<div class="govuk-grid-row ">
+	<div class="govuk-grid-column-one-quarter column-half-available-width">
+		<h2 class="govuk-heading-m">resize to half of whats avalable</h2>
+	</div>
+	<div class="govuk-grid-column-one-half column-fixed-width-80">
+		<h2 class="govuk-heading-m">fixed width column</h2>
+
+		<p class="govuk-body">
+			80 char width content - eg a register (80ch)<br>
+			will probably work with a fixed width font like courier (register)
+		</p>
+
+		<p class="govuk-body">
+			1234567890 234567890 334567890 444567890 555567890 666667890 777777890 8888888-80123456789
+		</p>
+	</div>
+	<div class="govuk-grid-column-one-quarter column-half-available-width">
+		<h2 class="govuk-heading-m">resize to half of whats avalable</h2>
+	</div>
+</div>
+
+
+{% endblock %}
