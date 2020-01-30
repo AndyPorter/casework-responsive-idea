@@ -53,6 +53,25 @@
 	font-family: "Courier New", Courier, monospace;
 }
 
+.column-fixed-width-callum-outer {
+	width: 50%;
+	overflow-x: scroll;
+
+}
+
+.column-fixed-width-callum-inner {
+	width:100%;
+	min-width: 70ch;
+	overflow-x: scroll;
+}
+
+.column-half-available-width-callum {
+	float:left;
+	width: 50%; 
+/* 	width: calc(50% - 10px); */
+}
+
+
 
 
 
@@ -96,4 +115,44 @@
 	content:"%";
 }
 
+
+
+ol.andy-list {
+    counter-reset: item;
+}
+
+ol.andy-list > li {
+    counter-increment: item;
+}
+
+ol.andy-list ol.andy-list > li {
+    display: block;
+}
+
+ol.andy-list ol.andy-list > li:before {
+    content: counters(item, ".") ". ";
+    margin-left: -20px;
+}
+
+
+.govuk-list--decimal {
+  counter-reset: num;
+  li:before {
+    content: "4." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--nested {
+  counter-reset: num;
+  li:before {
+    content: "4.12." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+  text-indent: -60px;
+  padding-left: 60px;
+}
 
